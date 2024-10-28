@@ -1,0 +1,28 @@
+Idea for strings that have tokens more than model's context size
+
+Problem:
+
+- In our case, each row maps a law case and it's judgement.
+
+- Our models's context size is 1028 tokens.
+
+- Each row in our data contains 4000 - 5000 tokens.
+
+Solution:
+
+- Chunking + summarization approach.
+
+- Divide each row into sub strings on some condition
+
+- For eg: a row contains 5 sentences and each ended with a dot then divide the row into 5 substrings.
+
+- Do this for all th rows.
+
+- Feed each substring into a llm that can summarize and get a summary for that substring.
+
+- Repeat this for all the substrings of all the rows.
+
+- Concatenate the summaries of each row's substrings.
+
+
+

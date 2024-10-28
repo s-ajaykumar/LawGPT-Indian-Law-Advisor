@@ -1,0 +1,6 @@
+gemma 2B - inference - results
+
+without finetuning:
+0/0 
+
+

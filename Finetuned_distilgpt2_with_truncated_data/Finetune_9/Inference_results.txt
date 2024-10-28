@@ -1,0 +1,20 @@
+- training_args = TrainingArguments(
+    num_train_epochs = 1,
+    per_device_train_batch_size = 1,
+    output_dir = '/content/drive/MyDrive/DeepLearning/GenerativeAI/distilgpt2_finetuned_8_results',
+    learning_rate = 4e-5,
+    lr_scheduler_type = 'constant',
+    logging_strategy = 'steps',
+    logging_steps = 0.1
+)
+
+- Step	Training Loss
+50	0.010100
+100	0.009100
+150	0.010100
+200	0.007100
+250	0.009000
+300	0.008100
+350	0.004800
+400	0.005800
+450	0.005200

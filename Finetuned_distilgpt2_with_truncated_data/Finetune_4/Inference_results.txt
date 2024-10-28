@@ -1,0 +1,23 @@
+- Step	Training Loss
+50	1.044200
+100	0.879400
+150	0.960400
+200	0.977200
+250	0.949600
+300	0.892500
+350	0.760200
+400	0.824100
+450	0.874400
+TrainOutput(global_step=492, training_loss=0.9166574710752906, metrics={'train_runtime': 1264.4773, 'train_samples_per_second': 0.389, 'train_steps_per_second': 0.389, 'total_flos': 16069750161408.0, 'train_loss': 0.9166574710752906, 'epoch': 1.0})
+
+- prompt = "Being member of unlawful assembly"
+
+- [{'generated_text': 'Being member of unlawful assembly Whoever is an unlawful assembly, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.  **Explanation'}]
+
+- prompt = "Punishment for voluntarily causing"
+
+- [{'generated_text': 'Punishment for voluntarily causing hurt to person Whoever voluntarily causes hurt or wrongful restraint to any person, intending thereby to cause hurt or wrongful restraint to any person, shall be punished with imprisonment of either description for a term which may extend to two years,'}]
+
+- prompt = "Voluntarily causing grievous hurt by dangerous weapons or means Whoever, except in the case provided for by section 335"
+
+- [{'generated_text': 'Voluntarily causing grievous hurt by dangerous weapons or means Whoever, except in the case provided for by section 335, intentionally causes grievous hurt to any person by means of any weapon or tool used, whether used by that person or by that person other'}]

@@ -1,0 +1,32 @@
+debug notes:
+
+1. The model did not return a loss from the inputs, only the following keys: last_hidden_state,past_key_values. For reference, the inputs it received are input_ids,attention_mask.
+
+	Soln: The dataset need to have a column "labels" and it's values are copy of the input_ids
+
+2. a Tensor with 128 elements cannot be converted to Scalar
+	mlm - masked language modelling(In attention layer, bidirectional) (eg: BERT)
+	clm - causal language modelling(In attention layer, unidirectional) (eg: GPT4)
+
+	Cause of the error : Model set to 'mlm' task
+
+	Soln: set data_collator to clm task
+	Code: data_collator = DataCollatorForLanguageModelling(tokenizer, mlm = False)
+
+3. Can't load tokenizer for '/content/drive/MyDrive/DeepLearning/GenerativeAI/distilgpt2_finetuned_1'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure '/content/drive/MyDrive/DeepLearning/GenerativeAI/distilgpt2_finetuned_1' is the correct path to a directory containing all relevant files for a GPT2TokenizerFast tokenizer.
+
+	- Occurs during inference using pipeline
+
+	Reason: When saving model using trainer.save_model() - it saves only the model config files and not the tokenizer files - essential for pipeline inference.
+
+	Soln: Pass the tokenizer to the pipeline function
+
+	Code: pipeline(task, model, tokenizer = tokenizer)
+
+4. `AcceleratorState` object has no attribute `distributed_type`. This happens if `AcceleratorState._reset_state()` was called and an `Accelerator` or `PartialState` was not reinitialized.
+
+	Reason - when we switch the models from gpu to cpu or viceversa or a change in the environment setup
+
+	Soln: restart sesssion & rerun all cells
+
+ 

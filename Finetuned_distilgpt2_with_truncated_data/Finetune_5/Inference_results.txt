@@ -1,0 +1,11 @@
+Step	Training Loss
+50	0.415500
+100	0.299100
+150	0.373800
+200	0.390200
+250	0.459000
+300	0.452100
+350	0.517100
+400	0.710500
+450	0.924800
+TrainOutput(global_step=492, training_loss=0.5613838909118156, metrics={'train_runtime': 1218.9825, 'train_samples_per_second': 0.404, 'train_steps_per_second': 0.404, 'total_flos': 16069750161408.0, 'train_loss': 0.5613838909118156, 'epoch': 1.0})

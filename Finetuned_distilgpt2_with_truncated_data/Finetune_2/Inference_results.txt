@@ -1,0 +1,34 @@
+inference results:
+
+- Step	Training Loss
+50	2.098200
+100	1.899100
+150	1.971800
+200	2.080600
+250	2.107300
+300	2.093400
+350	1.817800
+400	1.873400
+450	1.898600
+
+- TrainOutput(global_step=492, training_loss=1.9734052642574156, metrics={'train_runtime': 1210.0419, 'train_samples_per_second': 0.407, 'train_steps_per_second': 0.407, 'total_flos': 16069750161408.0, 'train_loss': 1.9734052642574156, 'epoch': 1.0})
+
+- prompt = "Public servant"
+
+- [{'generated_text': 'Public servant who is an offender who is likely to commit the offence punishable by imprisonment for life, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.  **Excessive punishment'}]
+
+- prompt = "“Public servant” The words “public servant” denote a person falling"
+
+- [{'generated_text': '“Public servant” The words “public servant” denote a person falling under the jurisdiction of public servant, or “public servant” or “nourished” by a fire, or “death”'}]
+
+- prompt = "Being member of unlawful assembly"
+
+- [{'generated_text': 'Being member of unlawful assembly. If a particular assembly, be called a “unlawful assembly” then it is unlawful for any one of its members to be said “unlawful”. Explanation 1 - Whoever'}]
+
+- prompt = "Punishment for voluntarily causing"
+
+- [{'generated_text': 'Punishment for voluntarily causing a disturbance to the property of any person is punishable with imprisonment for life, and not to be discharged from any State.  **Explanation** The offence of committing a particular offence, not to be punished by law'}]
+
+- prompt = "Voluntarily causing grievous hurt by dangerous weapons or means Whoever, except in the case provided for by section 335"
+
+- [{'generated_text': 'Voluntarily causing grievous hurt by dangerous weapons or means Whoever, except in the case provided for by section 335 in respect of the offence taken, voluntarily causes grievous hurt by any means, shall, if he so rashly causes grievous hurt by'}]

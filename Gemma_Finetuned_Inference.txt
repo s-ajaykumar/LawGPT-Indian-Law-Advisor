@@ -1,0 +1,93 @@
+Gemma Finetuning - 4:
+
+	- TrainOutput(global_step=30, training_loss=1.4107809702555338, metrics={'train_runtime': 139.1418, 'train_samples_per_second': 3.536, 'train_steps_per_second': 0.216, 'total_flos': 		  1191590636544000.0, 'train_loss': 1.4107809702555338, 'epoch': 0.975609756097561})
+
+	- SFTConfig(
+    		num_train_epochs = 1,
+    		max_seq_length = 250,
+   		dataset_text_field="text",
+   		output_dir="/content/drive/MyDrive/ajay/GenAI/gemma_finetuned_3",
+   		per_device_train_batch_size = 4,
+    		gradient_accumulation_steps = 4,
+    		learning_rate = 1e-4,
+    		lr_scheduler_type = 'constant',
+    		warmup_ratio = 0.1
+		)
+
+Gemma Finetuning - 5:
+	- TrainOutput(global_step=492, training_loss=1.297876745704713, metrics={'train_runtime': 466.4513, 'train_samples_per_second': 1.055, 'train_steps_per_second': 1.055, 'total_flos': 	  724438444478976.0, 'train_loss': 1.297876745704713, 'epoch': 1.0})
+	 
+	- SFTConfig(
+    		num_train_epochs = 1,
+    		max_seq_length = 250,
+    		dataset_text_field="text",
+    		output_dir="/content/drive/MyDrive/ajay/GenAI/gemma_finetuned_5",
+    		per_device_train_batch_size = 1,
+    		gradient_accumulation_steps = 1,
+    		gradient_checkpointing = True,
+    		learning_rate = 1e-4,
+    		lr_scheduler_type = 'constant',
+    		warmup_ratio = 0.1
+		)
+
+	- lora_config = LoraConfig(
+        r = 1,
+        lora_alpha = 32,
+        lora_dropout = 0.05,
+        bias = 'none',
+        task_type = 'CAUSAL_LM',
+        target_modules = ['q_proj', 'k_proj', 'o_proj', 'v_proj'],
+        use_rslora = True
+    )
+
+Gemma Finetuning - 6: (FAILURE) (Reason: Learning rate too high)
+	- TrainOutput(global_step=492, training_loss=0.4894449807764069, metrics={'train_runtime': 427.2153, 'train_samples_per_second': 1.152, 'train_steps_per_second': 1.152, 'total_flos': 	  724438444478976.0, 'train_loss': 0.4894449807764069, 'epoch': 1.0})
+
+	- sft_config = SFTConfig(
+    num_train_epochs = 1,
+    max_seq_length = 250,
+    dataset_text_field="text",
+    output_dir="/content/drive/MyDrive/ajay/GenAI/gemma_finetuned_6",
+    per_device_train_batch_size = 1,
+    gradient_accumulation_steps = 1,
+    gradient_checkpointing = True,
+    learning_rate = 2e-3,
+    lr_scheduler_type = 'cosine',
+    warmup_ratio = 0.1
+)
+
+	- lora_config = LoraConfig(
+        r = 1,
+        lora_alpha = 32,
+        lora_dropout = 0.05,
+        bias = 'none',
+        task_type = 'CAUSAL_LM',
+        target_modules = ['q_proj', 'k_proj', 'o_proj', 'v_proj'],
+        use_rslora = True
+    )
+
+Gemma Finetuning - 7:
+	- TrainOutput(global_step=492, training_loss=1.2042872731278582, metrics={'train_runtime': 455.8266, 'train_samples_per_second': 1.079, 'train_steps_per_second': 1.079, 'total_flos': 	  724438444478976.0, 'train_loss': 1.2042872731278582, 'epoch': 1.0})
+
+	- SFTConfig(
+    num_train_epochs = 1,
+    max_seq_length = 250,
+    dataset_text_field="text",
+    output_dir="/content/drive/MyDrive/ajay/GenAI/gemma_finetuned_6",
+    per_device_train_batch_size = 1,
+    gradient_accumulation_steps = 1,
+    gradient_checkpointing = True,
+    learning_rate = 1e-4,
+    lr_scheduler_type = 'constant',
+    warmup_ratio = 0.1
+)
+
+	-  LoraConfig(
+        r = 1,
+        lora_alpha = 32,
+        lora_dropout = 0.05,
+        bias = 'none',
+        task_type = 'CAUSAL_LM',
+        target_modules = ['q_proj', 'k_proj', 'o_proj', 'v_proj'],
+        use_rslora = True
+    )

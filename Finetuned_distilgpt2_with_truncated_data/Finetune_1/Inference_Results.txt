@@ -1,0 +1,23 @@
+Finetune1_Results:
+
+- TrainOutput(global_step=492, training_loss=2.5461400970210875, metrics={'train_runtime': 1301.4581, 'train_samples_per_second': 0.378, 'train_steps_per_second': 0.378, 'total_flos': 16069750161408.0, 'train_loss': 2.5461400970210875, 'epoch': 1.0})
+
+- prompt = "Public servant"
+
+- [{'generated_text': 'Public servant who may be punished under the Code is punished with imprisonment for life, or with imprisonment for life. **Illustration** A prisoner is imprisoned for life and any information contained in the record shall be known to the public whether such information contained in'}]
+
+- prompt = "“Public servant” The words “public servant” denote a person falling"
+
+- [{'generated_text': '“Public servant” The words “public servant” denote a person falling under the authority of a public servant when he is to do the job as public servant to the Government or private servant. Abetting Abetting Abetting Abetting'}]
+
+- prompt = "Being member of unlawful assembly"
+
+- [{'generated_text': 'Being member of unlawful assembly - Whoever commits unlawful assembly, shall be punished with imprisonment of either description for a term which may extend to four years, shall also be liable, in addition to any fine or fine.     A person who intentionally'}]
+
+- prompt = "Punishment for voluntarily causing"
+
+- [{'generated_text': 'Punishment for voluntarily causing death to any person who, in fact, is not knowing or having been advised to do so was a simple mistake when committed by any other officer of the same power. Amana For a simple mistake is a'}]
+
+- prompt = "Voluntarily causing grievous hurt by dangerous weapons or means Whoever, except in the case provided for by section 335"
+
+- [{'generated_text': 'Voluntarily causing grievous hurt by dangerous weapons or means Whoever, except in the case provided for by section 335 of the Code or section 329 and 326 in accordance with Indian law, knowingly causes grievous hurt by or by way of “a dangerous'}]

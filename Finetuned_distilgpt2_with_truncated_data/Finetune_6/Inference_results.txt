@@ -1,0 +1,19 @@
+Step	Training Loss
+50	0.226800
+100	0.203900
+150	0.253700
+200	0.277200
+250	0.386800
+300	0.361800
+350	0.426900
+400	0.533800
+450	0.635600
+TrainOutput(global_step=492, training_loss=0.4118723113362382, metrics={'train_runtime': 1256.7847, 'train_samples_per_second': 0.391, 'train_steps_per_second': 0.391, 'total_flos': 16069750161408.0, 'train_loss': 0.4118723113362382, 'epoch': 1.0})
+
+- prompt = "Punishment for voluntarily causing"
+
+- [{'generated_text': 'Punishment for voluntarily causing miscarriage Whoever voluntarily causes, or attempts to cause, miscarriage to be done with, in the name of the mother, or with child, any miscarriage that it will cause, or that it will cause, with the intention of'}]
+
+- prompt = "Voluntarily causing grievous hurt by dangerous weapons or means Whoever, except in the case provided for by section 335"
+
+- [{'generated_text': 'Voluntarily causing grievous hurt by dangerous weapons or means Whoever, except in the case provided for by section 335, does so voluntarily, with the intention of causing grievous hurt against any class of persons, is guilty of grievous hurt, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to'}]

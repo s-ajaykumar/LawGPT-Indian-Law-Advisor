@@ -1,0 +1,34 @@
+- training_args = TrainingArguments(
+    num_train_epochs = 1,
+    per_device_train_batch_size = 1,
+    output_dir = '/content/drive/MyDrive/DeepLearning/GenerativeAI/distilgpt2_finetuned_8_results',
+    learning_rate = 1e-4,
+    lr_scheduler_type = 'constant',
+    logging_strategy = 'steps',
+    logging_steps = 0.1
+)
+
+- Step	Training Loss
+50	0.181200
+100	0.181200
+150	0.167800
+200	0.184600
+250	0.206700
+300	0.182900
+350	0.188900
+400	0.170800
+450	0.187400
+
+- prompt = "Being member of unlawful assembly Whoever, being aware of facts which render any assembly"
+
+- [{'generated_text': 'Being member of unlawful assembly Whoever, being aware of facts which render any assembly an unlawful assembly, intentionally joins that assembly, or continues in it, is said to be a member of an unlawful assembly.  **Explanation** A person, not designated as an unlawful assembly, is said to be a "fully coining'}] - Accurate(Very happy)
+
+- prompt = "context: Punishment for voluntarily causing hurt Whoever"
+
+- [{'generated_text': 'context: Punishment for voluntarily causing hurt Whoever, except in the case provided by section 334, voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to one thousand rupees, or with both.  **'}] - Accurate (:
+
+- prompt = "Marriage ceremony fraudulently gone"
+
+- temperature = 0.1, top_k = 10
+
+- [{'generated_text': 'Marriage ceremony fraudulently gone through without lawful marriage Whoever, dishonestly or with a fraudulent intention, goes through the ceremony of being married, knowing that he is not thereby lawfully married, shall be punished with imprisonment of either description for a term which may extend to ten years, and'}] - Accurate (:

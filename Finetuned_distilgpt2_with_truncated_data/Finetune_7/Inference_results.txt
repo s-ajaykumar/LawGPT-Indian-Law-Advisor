@@ -1,0 +1,19 @@
+Step	Training Loss
+50	0.212100
+100	0.175500
+150	0.189500
+200	0.203800
+250	0.287000
+300	0.253500
+350	0.297300
+400	0.354300
+450	0.415900
+TrainOutput(global_step=492, training_loss=0.30328847334636905, metrics={'train_runtime': 1273.1147, 'train_samples_per_second': 0.386, 'train_steps_per_second': 0.386, 'total_flos': 16069750161408.0, 'train_loss': 0.30328847334636905, 'epoch': 1.0})
+
+- prompt = "Being member of unlawful assembly Whoever"
+
+- [{'generated_text': 'Being member of unlawful assembly Whoever is an unlawful assembly, knowing that he is an unlawful assembly, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.  **Explanation** It is not essential to'}]
+
+- prompt = "Punishment for voluntarily causing"
+
+- [{'generated_text': 'Punishment for voluntarily causing damage by causing it to spread to other places Whoever voluntarily causes damage by causing it to spread to other places, or to any place which it is situated, is either illegal for that purpose to spread or illegal for that purpose, shall be punished in the'}]
